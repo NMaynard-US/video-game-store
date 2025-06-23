@@ -1,5 +1,5 @@
 Video Game Online Store Project
-*Video Demo: <URL here> 
+*Video Demo: https://youtu.be/xuTPrXsRDiU
 *Description: This project is a simple C++ program that simulates an online video game store. It lets users look at video game products, add games to a shopping cart, and make purchases. The main goal is to build a program that feels like a real online shopping platform, where multiple users can interact with the store at the same time. To make it more realistic, the project uses multithreading, which allows different users to shop and check out at the same time without interfering with each other. This means while one user is buying games, another user can still be adding items to their cart.
 
 The project is built using object-oriented programming, or OOP, which helps organize the code in a clean and reusable way. The main components of the system are divided into different classes, and each class has its own job. This makes the code easier to manage, understand, and update. Each class is written in its own pair of files, one header file (.h) and one implementation file (.cpp).
