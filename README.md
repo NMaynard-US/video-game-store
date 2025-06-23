@@ -1,18 +1,8 @@
-## Getting Started
+Video Game Online Store Project
+*Video Demo: <URL here> 
+*Description: This project is a basic online shopping system for a video game store, built using C++. It lets users look at different video games, add them to a shopping cart, and “buy” them. To make it more like a real online store, the program uses multithreading, which means it can handle multiple users shopping at the same time. For example, one user can be checking out while another is still adding games to their cart. The system also gives discounts to different types of users—regular users get no discount, premium users get 10% off, and VIP users get 20% off.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Each file in the project has a specific job. The Product.h and Product.cpp files describe each game in the store, including its name, price, and how many copies are in stock. The ShoppingCart.h and ShoppingCart.cpp files are used to manage each user’s cart, such as adding or removing games. The User.h and User.cpp files define general user details, and there are separate files for RegularUser, PremiumUser, and VIPUser, which are special versions of the main user class. The Main.cpp file brings everything together. It creates products and users, adds games to carts, and runs each user in a separate thread so they can shop at the same time. There's also a README.md file to help explain how to use the program.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+The reason the project is split into many files is to keep the code organized and easy to work with. Using classes and inheritance helps avoid repeating the same code for different user types. Multithreading was added to show how multiple users could interact with the system at once, like in a real store. To make sure the data doesn’t get messed up when two users try to buy the same game at the same time, the program uses a mutex, which locks access to shared data while it's being changed. These choices help keep the system safe, organized, and closer to how a real online store would work.
+*TODO Fix compiler issue in vscode
